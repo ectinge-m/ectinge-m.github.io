@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Taoism</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="../p5.min.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+  <!-- Header -->
+  <!-- <div class="header">
+    <h2>QTMC Official</h2>
+  </div> -->
+
+  <div class="wrap">
+    <div class="main">
+
+      <!-- Navigation Bar -->
+      <div class="navbar">
+        <a href="about.html">ABOUT</a>
+        <a href="diag.html">DIAG</a>
+        <a href="shop.html">SHOP</a>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">DIAG</button>
+        <div class="dropdown-content">
+          <a href="shop.html">SHOP</a>
+          <a href="about.html">ABOUT</a>
+        </div>
+      </div>
+
+      <!-- The flexible grid (content) -->
+      <div class="row">
+
+        <div class="left">
+        </div>
+
+        <div class="mid">
+          <br>
+          <br>
+          <p id="mid-width">Some text introducing the background info of the diagnostic system.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <br>
+          <h2>INSTRUCTION</h2>
+          <p>Some text of instruction.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <br>
+          <h2>DIAGNOSIS</h2>
+
+          <div class="container">
+            <form action="/action_page.php">
+            <div class="row-form">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="fname" placeholder="Your first name.." autocomplete="off" >
+              </div>
+            </div>
+            <div class="row-form">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lname" placeholder="Your last name.." autocomplete="off" >
+              </div>
+            </div>
+            <div class="row-form">
+              <div class="col-25">
+                <label for="location">Location</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="location" name="location" value="Your location.." autocomplete="off" readonly>
+                <button class="btn" onclick="getLocation()">Get Location</button>
+              </div>
+            </div>
+            <div class="row-form">
+              <div class="col-25">
+                <label for="date">Date</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="date" name="date" value="Local date.." autocomplete="off" readonly>
+                <button class="btn" onclick="getDateAll()">Get Date</button>
+              </div>
+            </div>
+            <div class="row-form">
+              <div class="col-25">
+                <label for="time">Time</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="time" name="time" value="Local time.." autocomplete="off" readonly>
+                <button class="btn" onclick="getTime()">Get Time</button>
+              </div>
+            </div>
+            <div class="row-form">
+              <button class="submit" id="submit" onclick="checkSubmit()">START DIAGNOSIS</button>
+            </div>
+            </form>
+          </div>
+
+          <br>
+          <div id="diag-canvas" style="position:absolute;"></div>
+
+          <canvas id="placeholder"></canvas>
+
+          <br><br>
+
+
+          <hr>
+          <p>Disclaimer text...</p>
+
+        </div>
+
+        <div class="right">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Design & developed by Grace Mai. All rights reserved.</p>
+  </div>
+
+</body>
+
+</html>
