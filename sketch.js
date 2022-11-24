@@ -227,11 +227,12 @@ function getLocation() {
   } else {
     document.getElementById("location").value = "Geolocation is not supported by this device."
   }
+
+  locationCheck = true;
 }
 
 function showPosition(position) {
   document.getElementById("location").value = position.coords.latitude + "/" + position.coords.longitude;
-  locationCheck = true;
 }
 
 function getDateAll() {
