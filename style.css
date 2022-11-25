@@ -329,7 +329,7 @@ label {
 
 .shop-card {
   border: solid var(--blue) 2px;
-  background-color: transparent;
+  background-color: var(--bg);
   padding: 12px;
   transition: 0.2s;
 }
