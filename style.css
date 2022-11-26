@@ -391,7 +391,7 @@ label {
     display: none;
     position: fixed;
     z-index: 1;
-    padding: 32px;
+    padding: 18px;
     left: 0;
     top: 0;
     width: 100%;
@@ -404,7 +404,7 @@ label {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 90%;
     max-width: 700px;
 }
 
@@ -428,11 +428,11 @@ label {
 .close {
     position: absolute;
     top: 15px;
-    right: 35px;
+    right: 32px;
     color: white;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .close:hover,
