@@ -7,6 +7,7 @@
   <title>Quantum Taoism</title>
 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="dist/simple-lightbox.css" />
 
 </head>
 
@@ -22,15 +23,16 @@
 
       <!-- Navigation Bar -->
       <div class="navbar">
-        <a href="about.html">ABOUT</a>
+
         <a href="index.html">DIAG</a>
         <a href="shop.html">SHOP</a>
-      </div>
+        <a href="info.html">INFO</a>
 
+      </div>
       <div class="dropdown">
         <button class="dropbtn">SHOP</button>
         <div class="dropdown-content">
-          <a href="about.html">ABOUT</a>
+          <a href="info.html">INFO</a>
           <a href="index.html">DIAG</a>
         </div>
       </div>
@@ -46,19 +48,19 @@
 
             <div class="shop-col">
               <div class="shop-card">
-                <div class="shop-img"></div>
+                <img id="shop-img1" src="img/placeholder1.jpg" class="shop-img">
                 <h3>ITEM NAME</h3>
                 <p class="item-text">Some description text. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit.</p>
-                <button class="shopbtn" name="button">Out of stock</button>
+                <button class="shopbtn" name="button">OUT OF STOCK</button>
               </div>
             </div>
 
             <div class="shop-col">
               <div class="shop-card">
-                <div class="shop-img"></div>
+                <img id="shop-img2" src="img/placeholder2.jpg" class="shop-img">
                 <h3>ITEM NAME</h3>
                 <p class="item-text">Some description text. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit.</p>
-                <button class="shopbtn" name="button">Out of stock</button>
+                <button class="shopbtn" name="button">OUT OF STOCK</button>
               </div>
             </div>
 
@@ -68,19 +70,19 @@
 
             <div class="shop-col">
               <div class="shop-card">
-                <div class="shop-img"></div>
+                <img id="shop-img3" src="img/placeholder3.jpg" class="shop-img">
                 <h3>ITEM NAME</h3>
                 <p class="item-text">Some description text. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit.</p>
-                <button class="shopbtn" name="button">Out of stock</button>
+                <button class="shopbtn" name="button">OUT OF STOCK</button>
               </div>
             </div>
 
             <div class="shop-col">
               <div class="shop-card">
-                <div class="shop-img"></div>
+                <img id="shop-img4" src="img/placeholder4.jpg" class="shop-img">
                 <h3>ITEM NAME</h3>
                 <p class="item-text">Some description text. Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit.</p>
-                <button class="shopbtn" name="button">Out of stock</button>
+                <button class="shopbtn" name="button">OUT OF STOCK</button>
               </div>
             </div>
 
@@ -90,6 +92,23 @@
 
         <div class="right"></div>
 
+        <div id="myModal1" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+        </div>
+        <div id="myModal2" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img02">
+        </div>
+        <div id="myModal3" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img03">
+        </div>
+        <div id="myModal4" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img04">
+        </div>
+
       </div>
 
     </div>
@@ -98,6 +117,67 @@
   <div class="footer">
     <p>Design & developed by Grace Mai. All rights reserved.</p>
   </div>
+
+  <script>
+
+  var modal1 = document.getElementById('myModal1');
+  var img1 = document.getElementById('shop-img1');
+  var modalImg1 = document.getElementById("img01");
+  img1.onclick = function(){
+      modal1.style.display = "block";
+      modalImg1.src = this.src;
+      modalImg1.alt = this.alt;
+  }
+
+  var modal2 = document.getElementById('myModal2');
+  var img2 = document.getElementById('shop-img2');
+  var modalImg2 = document.getElementById("img02");
+  img2.onclick = function(){
+      modal2.style.display = "block";
+      modalImg2.src = this.src;
+      modalImg2.alt = this.alt;
+  }
+
+  var modal3 = document.getElementById('myModal3');
+  var img3 = document.getElementById('shop-img3');
+  var modalImg3 = document.getElementById("img03");
+  img3.onclick = function(){
+      modal3.style.display = "block";
+      modalImg3.src = this.src;
+      modalImg3.alt = this.alt;
+  }
+
+  var modal4 = document.getElementById('myModal4');
+  var img4 = document.getElementById('shop-img4');
+  var modalImg4 = document.getElementById("img04");
+  img4.onclick = function(){
+      modal4.style.display = "block";
+      modalImg4.src = this.src;
+      modalImg4.alt = this.alt;
+  }
+
+  var span1 = document.getElementsByClassName("close")[0];
+  span1.onclick = function() {
+      modal1.style.display = "none";
+  }
+
+  var span2 = document.getElementsByClassName("close")[1];
+  span2.onclick = function() {
+      modal2.style.display = "none";
+  }
+
+  var span3 = document.getElementsByClassName("close")[2];
+  span3.onclick = function() {
+      modal3.style.display = "none";
+  }
+
+  var span4 = document.getElementsByClassName("close")[3];
+  span4.onclick = function() {
+      modal4.style.display = "none";
+  }
+
+  </script>
+
 
 
 </body>
