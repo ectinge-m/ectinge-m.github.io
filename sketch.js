@@ -170,7 +170,7 @@ function draw() {
     textSize(12);
     textAlign(RIGHT);
     textFont('Helvetica');
-    text('in progress..', w - 12, 24)
+    text('...', w - 12, 24)
   }
 
   rectWidth = rectWidth + speedX;
