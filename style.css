@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   padding: 100px 10px;
   font-size: 300%;
+  font-weight: normal;
   text-decoration: none;
   text-align: center;
   transition: transform 0.2s;
@@ -113,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .dropdown-content a {
   font-size: 300%;
+  font-weight: normal;
   text-align: center;
   display: block;
   color: var(--blue);
