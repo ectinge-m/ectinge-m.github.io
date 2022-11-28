@@ -163,7 +163,7 @@ function draw() {
   noStroke();
   fill('#ec2029');
   rect(0, 0, rectWidth, 4);
-  var speedX = map(speed0, 2, 43, w / 2000, w / 1000);
+  var speedX = map(speed0, 2, 43, w / 1000, w / 600);
 
   if (rectWidth > 0) {
     textStyle(NORMAL);
