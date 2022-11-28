@@ -204,9 +204,9 @@ function draw() {
     }
 
     text('Your prescription:', w - 12, 64);
-    text('Bian stone x ' + count1, w - 12, 80);
-    text('Magnet patch x ' + count2, w - 12, 96);
-    text('Water dispenser x ' + count3, w - 12, 112);
+    text('field generator ' + count1, w - 12, 80);
+    text('fresh shrimp x ' + count2, w - 12, 96);
+    text('quantic water x ' + count3, w - 12, 112);
     noLoop()
 
 
